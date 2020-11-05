@@ -1,0 +1,27 @@
+{
+  "process": {
+    "process_id": "absolute",
+    "arguments": {
+      "x": {
+        "create_data": {
+          "type": "number",
+          "data": "inf"
+        }
+      }
+    }
+  },
+
+  "assert": {
+    "process_id": "assert_equal",
+    "arguments": {
+      "a": { "from_node": "process" },
+      "b": {
+        "create_data": {
+          "type": "number",
+          "data": "inf"
+        }
+      }
+    },
+    "result": true
+  }
+}
